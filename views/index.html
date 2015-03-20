@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='en' ng-app='todoApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./css/todo-style.css">
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-resource/angular-resource.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/todoAppController.js"></script>
+  </head>
+
+  <body ng-controller="todoAppController">
+
+    <form id="todoForm">
+      <input type="text" placeholder="Please enter to do item">
+      <input type="submit" ng-click="doItem()">
+    </form>
+
+    </div class="todoList">
+      <h3> What needs to be done? </h3>
+      <table>
+        <th></th>
+        <td> {{item}}</td>
+      </table>
+    <div>
+
+  </body>
+</html>
