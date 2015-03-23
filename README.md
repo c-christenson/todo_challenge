@@ -1,24 +1,22 @@
 [![Build Status](https://travis-ci.org/c-christenson/todo_challenge.svg?branch=master)](https://travis-ci.org/c-christenson/todo_challenge)
 
-# Todo Challenge
+###How to Run
+`git clone https://github.com/c-christenson/todo_challenge.git`  
+`cd todo_challenge`
+`bundle install`
 
-* Deadline: submit completed pull request by 9am on Monday
-* You may use whatever level of JavaScript you feel comfortable with - pure JS, jQuery, Angular, or whatever weird and wonderful framework you want to try. Extra points for DogeScript
+###How to Run Tests
+`start node server: node server`
+`start selenium server: webdriver-manager start`
+`run protractor tests: protractor test/conf.js`
+`run karma tests: karma start test/karma.conf.js`
 
-Steps
--------
 
-1. Fill out your learning plan self review for the week: https://github.com/makersacademy/learning_plan 
-2. Fork this repo, and clone to your local machine
-3. Complete the following challenge:
+###How to Run To-Do List
+`start node server: node server`
+`open browser at address: localhost:8080`
 
-## Challenge
-
-![Todo mockup](https://makersacademy.mybalsamiq.com/mockups/2914603.png?key=afabb09aef2901a2732515ae4349c1ec0458294b)
-
-Build a Todo list as a mini front-end application. You don't have to use a database, the front-end is more important - you can use an appropriate data structure stored somewhere in your JavaScript (this time only!)
-
-Here are the core user stories:
+# Todo List User Stories
 
 ```
 As a forgetful person
@@ -26,20 +24,12 @@ I want to store my tasks
 So that I don't forget them
 
 As a person with limited time
-I want to instantly be able to update my todo list (adding and changing entries)
+I want to instantly be able to update my todo list (adding entries)
 So that I have more time to think about other things
 
 As a person who actually gets stuff done
 I want to mark my tasks as done
 So that I don't do them twice
-```
-
-Here are some other user stories you may choose to implement:
-
-```
-As a person with a lot of tasks
-I want to be able to filter my tasks by "All", "Active", "Complete"
-So that I only see the relevant tasks
 
 As a person who doesn't like counting by hand
 I want to see a total number of tasks
@@ -50,19 +40,16 @@ I want to be able to clear my completed tasks
 So I never see them again
 ```
 
-As you may imagine, implementing a To-do list is very much a solved problem. However, we are mainly interested in seeing how you approach testing and design. We are looking for:
+Further Testing to Include:
+* protractor testing for marking an item complete (strikethroughs in css)
+* karma testing for deleting a task
 
-* well written, well structured acceptance and unit tests
-* clear and expressive JavaScript
-* good HTML5 markup
+Extensions to Include:
 
-Don't worry about deployment, and make sure you read the CONTRIBUTING.md when submitting a pull request.
-
-## Extensions
-
+* Properly implement Travis CI
+* Need to be able to change entries
+* Need to be able to filer tasks by All, Active and Complete
 * Deploy the app
-* Create a persistance layer (e.g. MongoDB), or use LocalStorage or the filesystem through Node
-* Make it look purdy (CSS) - try a framework like Bootstrap or Foundation
+* Use MongoDB for data storage
 
-Good luck!
 

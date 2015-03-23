@@ -6,16 +6,22 @@ body {
   font-family: sans-serif;
   color: bloack;
   padding-top: 3em;
+  font-family: 'Dancing Script', cursive;
+  background-opacity: 0.2;
+  text-align: center;
 }
 
 form {
   margin-top: 1%;
-  text-align: center;
 }
 
-table, th, td {
-  border: 1px solid black;
+li {
+  list-style-type: none;
+  font-size: 1.5em;
+  padding: 10px;
 }
 
 
-
+.done-true {
+  text-decoration: line-through;
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang='en' ng-app='todoApp'>
   <head>
+  <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
     <title>To-Do List</title>
     <link rel="stylesheet" href="./css/todo-style.css">
@@ -9,22 +10,35 @@
     <script src="/bower_components/angular-resource/angular-resource.js"></script>
     <script src="/js/app.js"></script>
     <script src="/js/todoAppController.js"></script>
+    <body background="images/white.jpg">
   </head>
 
   <body ng-controller="todoAppController">
+  <h1>THE LIST</h1>
+  <h2>Let's Get Things Done</h2>
 
     <form id="todoForm">
-      <input type="text" placeholder="Please enter to do item">
-      <input type="submit" ng-click="doItem()">
+      <input type="text" ng-model="newTodo" placeholder="Please enter to do item">
+      <button id="addTodo" type="button" ng-click="addTodo()">Add Item</button>
     </form>
 
-    </div class="todoList">
+    <div class="todoList">
       <h3> What needs to be done? </h3>
-      <table>
-        <th></th>
-        <td> {{item}}</td>
-      </table>
-    <div>
+      <ul>
+        <li ng-repeat="todo in todos">
+          <input type="checkbox" ng-model="todo.isComplete"/>
+          <span class="done-{{todo.isComplete}}">{{todo.taskName}}</span>
+        </li>
+      </ul>
+      <h3 id="totalTodo"> Total Items To Do: {{totalTodos()}}</h3>
+      <h3 id="totalComplete"> Total Items Completed: {{totalComplete()}}</h3>
+      <button id="clear" type="button"ng-click="clearCompleted()">Clear Completed Tasks</button>
+    
+
 
   </body>
 </html>
+
+
+
+
