@@ -2,19 +2,19 @@
 
 ###How to Run
 `git clone https://github.com/c-christenson/todo_challenge.git`  
-`cd todo_challenge`
-`bundle install`
+`cd todo_challenge`  
+`bundle install`  
 
 ###How to Run Tests
-`start node server: node server`
-`start selenium server: webdriver-manager start`
-`run protractor tests: protractor test/conf.js`
-`run karma tests: karma start test/karma.conf.js`
+`start node server: node server`  
+`start selenium server: webdriver-manager start`  
+`run protractor tests: protractor test/conf.js`  
+`run karma tests: karma start test/karma.conf.js`  
 
 
 ###How to Run To-Do List
-`start node server: node server`
-`open browser at address: localhost:8080`
+`start node server: node server`  
+`open browser at address: localhost:8080`  
 
 # Todo List User Stories
 
